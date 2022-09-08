@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Shooting Game in Virtual Reality</title>
+  <title>Juego de disparos en realidad virtual (VR)</title>
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script
     src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>    
@@ -12,21 +12,21 @@
 <body>
   <a-scene id="scene" >
     
-    <!--Camera and Cursor-->
+    <!--Cámara y cursor-->
     <a-entity id="camera" camera position="0 1.6 0" wasd-controls="acceleration:200"
       look-controls="pointerLockEnabled: false">
       <a-cursor></a-cursor>
     </a-entity>
 
-    <!--Bullets-->
+    <!--Balas-->
     <a-entity bullets></a-entity>
 
-    <!--Ground-->
+    <!--Terreno-->
     <a-plane id="ground" position="0 0 0" rotation="-90 0 0" height="200" width="200" color="#FBF2B0" static-body
       visible="true">
     </a-plane>
 
-    <!--Boxes-->
+    <!--Cajas-->
     <a-box id="box1" position="0 0.5 -6.33437" color="#16A2F6" depth="1" height="1.5" width="10"></a-box>
     <a-box id="box2" position="-5.63047 0.5 -9.65585" color="#16A2F6" depth="1" height="1.5" width="10"></a-box>
     <a-box id="box3" position="2.5 0.5 -17.4559" color="#16A2F6" depth="1" height="1.5" width="10"></a-box>
